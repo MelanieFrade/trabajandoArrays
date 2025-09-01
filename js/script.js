@@ -39,4 +39,19 @@ function showList(array) {
 document.addEventListener("DOMContentLoaded", (e) => {
   // Escribe tu solución aquí
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
+  /**
+   * Filtro los elementos que solo sean de tipo string
+   * el serpia cada uno de los elementos
+   * typeof para comparar cada elemento, con el tipo buscado
+   */
+  let elementos = strangeArray.filter((el) => typeof el === "string");
+  /**
+   * utilizo sort para ordenar de manera ascendente los elementos (a-z)
+   */
+  elementos.sort();
+  /**
+   * utilizo la funcion brindada para mostrar la lista obtenida
+   */
+  showList(elementos);
+ 
 });
